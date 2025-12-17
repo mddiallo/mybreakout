@@ -7,8 +7,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="game-container">
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen" class="welcome-screen">
+        <div class="welcome-container">
+            <h1 class="welcome-title">BREAKOUT</h1>
+            <p class="welcome-subtitle">Enter your name to start playing</p>
+            <form id="nameForm" class="name-form">
+                <input 
+                    type="text" 
+                    id="playerName" 
+                    class="name-input" 
+                    placeholder="Enter your name"
+                    maxlength="20"
+                    required
+                    autofocus
+                />
+                <button type="submit" class="start-button">START GAME</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Game Container -->
+    <div class="game-container hidden">
         <div class="score-container">
+            <div class="score-item">
+                <span class="label">Player:</span>
+                <span id="playerNameDisplay" class="value"></span>
+            </div>
             <div class="score-item">
                 <span class="label">Score:</span>
                 <span id="score" class="value">0</span>

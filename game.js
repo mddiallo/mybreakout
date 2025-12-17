@@ -138,6 +138,7 @@ class Game {
         this.gameStarted = false;
         this.gameOver = false;
         this.gameWon = false;
+        this.playerName = '';
         
         this.keys = {};
         
@@ -146,6 +147,11 @@ class Game {
         this.updateUI();
         this.showMessage('BREAKOUT', 'Press SPACE to start');
         this.gameLoop();
+    }
+
+    setPlayerName(name) {
+        this.playerName = name;
+        document.getElementById('playerNameDisplay').textContent = name;
     }
 
     initBricks() {
@@ -363,6 +369,29 @@ class Game {
 }
 
 // Initialize game when page loads
+let game;
+
 window.addEventListener('load', () => {
-    new Game();
+    const welcomeScreen = document.getElementById('welcomeScreen');
+    const gameContainer = document.querySelector('.game-container');
+    const nameForm = document.getElementById('nameForm');
+    const playerNameInput = document.getElementById('playerName');
+
+    nameForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const playerName = playerNameInput.value.trim();
+        
+        if (playerName) {
+            // Hide welcome screen
+            welcomeScreen.classList.add('hidden');
+            
+            // Show game container
+            gameContainer.classList.remove('hidden');
+            
+            // Initialize game
+            game = new Game();
+            game.setPlayerName(playerName);
+        }
+    });
 });
