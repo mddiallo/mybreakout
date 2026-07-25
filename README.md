@@ -78,3 +78,15 @@ Works in all modern browsers that support:
 ## License
 
 Feel free to use and modify for your own projects!
+
+## Native iPhone App: Prismabrique
+
+This repository also contains **Prismabrique**, a standalone native SwiftUI iOS 26 app
+inspired by this same web game — 50 config-driven levels, touch controls, progression
+persistence, accessibility settings, and an optional privacy-respecting location-based
+ambient theme. It is a separate Xcode project and does not modify or depend on the web
+files above.
+
+See [`Prismabrique/README.md`](Prismabrique/README.md) for details on opening, building,
+and testing the iOS app, and [`Prismabrique/PRIVACY.md`](Prismabrique/PRIVACY.md) for its
+privacy policy.
