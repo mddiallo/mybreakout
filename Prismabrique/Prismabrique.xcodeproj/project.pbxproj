@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE977D4747CD52A1AC80C92F /* PrismabriqueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8549C7CAD775D84AC52B53E /* PrismabriqueApp.swift */; };
+		3FA37942BF345BC7B29CD68D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBF1F89DB335AC58695274F /* AppState.swift */; };
+		29E32EF144065ADC80428816 /* BrickPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B0754CDD885723BF4D6058 /* BrickPattern.swift */; };
+		6B48B349499F558F814802A2 /* GameBalanceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF68E03B565679A58D5B73 /* GameBalanceConfig.swift */; };
+		B76786DA781B5090A9E6C5D9 /* HemisphereRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56856419770054E18541C3B4 /* HemisphereRegion.swift */; };
+		709FD491FE2E5043BCDC5304 /* LevelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED441A2FFF3F5FC69988CEEB /* LevelConfig.swift */; };
+		659FD93A6FA356D1AE71D0D4 /* PlayerProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2E2B3D46A758CFB2A218B2 /* PlayerProgress.swift */; };
+		11A34DF26A7453DBBF6AC2FD /* AudioEngineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F85F11410572CB6BE203A /* AudioEngineManager.swift */; };
+		F58BF9FE63AF584089EC1F1D /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE96284764A5124BF612EDC /* HapticsManager.swift */; };
+		760C70E0B368518A849A1358 /* LocationOptInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308760D9248E532DBB05DEC3 /* LocationOptInManager.swift */; };
+		B9C543A3509E520E95EBBD9C /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B002D83752455BEB88397C1 /* GameEngine.swift */; };
+		87195A717DFE5C40B1A4E271 /* GameEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EA453E1AD5E168A5BC190 /* GameEntities.swift */; };
+		4B52845C3B2557878C133F4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33058EF92AC25907A9B86B5E /* ContentView.swift */; };
+		D263888ECB7C53B9A06A97F8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9701F2EB7FCD550F82ED937A /* GameView.swift */; };
+		45803C1C592B5E2EAEBA83B3 /* LevelSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB4D7B47105259A1CE508E /* LevelSelectView.swift */; };
+		C712D207BE0A54528DD5C950 /* LocationOptInSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E680D065546D5270996C4C11 /* LocationOptInSheetView.swift */; };
+		899E7E43F7975B40BA930B06 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59A6E7091125D20B050D44E /* MainMenuView.swift */; };
+		7EB836E8491D5E77838A693A /* Overlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A44B56F61A59F88C0ADE8D /* Overlays.swift */; };
+		828132AB919C5A938B780F99 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA70DC4694D25EB3AD9D979E /* SettingsView.swift */; };
+		9B0F2A8690F6575C95250B57 /* NeonButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EF3EDEE81E52DAA8543F6A /* NeonButtonStyle.swift */; };
+		FD7EFDF723FA5230883DAC04 /* ScoreHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E153D57DA155FC981305C3 /* ScoreHUD.swift */; };
+		3EAB889B2F785602B0EC381A /* GameEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83DE14B9E35A75B517DF4C /* GameEngineTests.swift */; };
+		3E3548DC6A335B0088D1CD6A /* HemisphereRegionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5678EB33235457BEBCF4FBEB /* HemisphereRegionTests.swift */; };
+		BC371730A4D25141BDF4B847 /* LevelGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28FE20FD2AE554CA8C4AAE9 /* LevelGeneratorTests.swift */; };
+		8615019312CA5BBFA5A48555 /* PersistenceStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9788EBC9B53E5023B39AFEC6 /* PersistenceStoreTests.swift */; };
+		81ED6E38743359B1882296F6 /* GameBalance.json in Resources */ = {isa = PBXBuildFile; fileRef = EBE9B549F5065813B78F8C63 /* GameBalance.json */; };
+		A76192EF4F7152B695D688B2 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3712E8AE27BC509A8D096969 /* PrivacyInfo.xcprivacy */; };
+		802A2378E25F526598AFF161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A8B864E8DE5196A93EDBF4 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06BD360594015E4C8DC73D31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D628296EA6BD57128CD1B32B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C421DAEF6FC515184964945;
+			remoteInfo = Prismabrique;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B00B17F4E9045F6C905AA783 /* Prismabrique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prismabrique.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6559DDDAA4B75BFB917B656E /* PrismabriqueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PrismabriqueTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8549C7CAD775D84AC52B53E /* PrismabriqueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PrismabriqueApp.swift"; path = "Prismabrique/PrismabriqueApp.swift"; sourceTree = "<group>"; };
+		FEBF1F89DB335AC58695274F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AppState.swift"; path = "Prismabrique/Models/AppState.swift"; sourceTree = "<group>"; };
+		05B0754CDD885723BF4D6058 /* BrickPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BrickPattern.swift"; path = "Prismabrique/Models/BrickPattern.swift"; sourceTree = "<group>"; };
+		75DF68E03B565679A58D5B73 /* GameBalanceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameBalanceConfig.swift"; path = "Prismabrique/Models/GameBalanceConfig.swift"; sourceTree = "<group>"; };
+		56856419770054E18541C3B4 /* HemisphereRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "HemisphereRegion.swift"; path = "Prismabrique/Models/HemisphereRegion.swift"; sourceTree = "<group>"; };
+		ED441A2FFF3F5FC69988CEEB /* LevelConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LevelConfig.swift"; path = "Prismabrique/Models/LevelConfig.swift"; sourceTree = "<group>"; };
+		BF2E2B3D46A758CFB2A218B2 /* PlayerProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PlayerProgress.swift"; path = "Prismabrique/Models/PlayerProgress.swift"; sourceTree = "<group>"; };
+		492F85F11410572CB6BE203A /* AudioEngineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AudioEngineManager.swift"; path = "Prismabrique/Managers/AudioEngineManager.swift"; sourceTree = "<group>"; };
+		3AE96284764A5124BF612EDC /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "HapticsManager.swift"; path = "Prismabrique/Managers/HapticsManager.swift"; sourceTree = "<group>"; };
+		308760D9248E532DBB05DEC3 /* LocationOptInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LocationOptInManager.swift"; path = "Prismabrique/Managers/LocationOptInManager.swift"; sourceTree = "<group>"; };
+		9B002D83752455BEB88397C1 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameEngine.swift"; path = "Prismabrique/Game/GameEngine.swift"; sourceTree = "<group>"; };
+		CF2EA453E1AD5E168A5BC190 /* GameEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameEntities.swift"; path = "Prismabrique/Game/GameEntities.swift"; sourceTree = "<group>"; };
+		33058EF92AC25907A9B86B5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ContentView.swift"; path = "Prismabrique/Views/ContentView.swift"; sourceTree = "<group>"; };
+		9701F2EB7FCD550F82ED937A /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameView.swift"; path = "Prismabrique/Views/GameView.swift"; sourceTree = "<group>"; };
+		B4CB4D7B47105259A1CE508E /* LevelSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LevelSelectView.swift"; path = "Prismabrique/Views/LevelSelectView.swift"; sourceTree = "<group>"; };
+		E680D065546D5270996C4C11 /* LocationOptInSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LocationOptInSheetView.swift"; path = "Prismabrique/Views/LocationOptInSheetView.swift"; sourceTree = "<group>"; };
+		B59A6E7091125D20B050D44E /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MainMenuView.swift"; path = "Prismabrique/Views/MainMenuView.swift"; sourceTree = "<group>"; };
+		B1A44B56F61A59F88C0ADE8D /* Overlays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Overlays.swift"; path = "Prismabrique/Views/Overlays.swift"; sourceTree = "<group>"; };
+		FA70DC4694D25EB3AD9D979E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SettingsView.swift"; path = "Prismabrique/Views/SettingsView.swift"; sourceTree = "<group>"; };
+		35EF3EDEE81E52DAA8543F6A /* NeonButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NeonButtonStyle.swift"; path = "Prismabrique/Views/Components/NeonButtonStyle.swift"; sourceTree = "<group>"; };
+		43E153D57DA155FC981305C3 /* ScoreHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ScoreHUD.swift"; path = "Prismabrique/Views/Components/ScoreHUD.swift"; sourceTree = "<group>"; };
+		EBE9B549F5065813B78F8C63 /* GameBalance.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "GameBalance.json"; path = "Prismabrique/Resources/GameBalance.json"; sourceTree = "<group>"; };
+		3712E8AE27BC509A8D096969 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "PrivacyInfo.xcprivacy"; path = "Prismabrique/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		34A8B864E8DE5196A93EDBF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets.xcassets"; path = "Prismabrique/Assets.xcassets"; sourceTree = "<group>"; };
+		ED83DE14B9E35A75B517DF4C /* GameEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameEngineTests.swift"; path = "PrismabriqueTests/GameEngineTests.swift"; sourceTree = "<group>"; };
+		5678EB33235457BEBCF4FBEB /* HemisphereRegionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "HemisphereRegionTests.swift"; path = "PrismabriqueTests/HemisphereRegionTests.swift"; sourceTree = "<group>"; };
+		F28FE20FD2AE554CA8C4AAE9 /* LevelGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LevelGeneratorTests.swift"; path = "PrismabriqueTests/LevelGeneratorTests.swift"; sourceTree = "<group>"; };
+		9788EBC9B53E5023B39AFEC6 /* PersistenceStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PersistenceStoreTests.swift"; path = "PrismabriqueTests/PersistenceStoreTests.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B29E3208265550ABBF8EF02F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5BCAA725DA15FB28087A520 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06451ACE8B945502BE8318BD = {
+			isa = PBXGroup;
+			children = (
+				9E2AA07C8ECE52F492AA15BD,
+				6B9067B5AF825814A7E16CC0,
+				81119E0774F15BD8AC6203A8,
+			);
+			sourceTree = "<group>";
+		};
+		81119E0774F15BD8AC6203A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B00B17F4E9045F6C905AA783 /* Prismabrique.app */,
+				6559DDDAA4B75BFB917B656E /* PrismabriqueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D981555EADEB5DCB9AD5757F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBE9B549F5065813B78F8C63,
+			);
+			name = "Resources";
+			sourceTree = "<group>";
+		};
+		81DCF9973A365888B43EE4B3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				35EF3EDEE81E52DAA8543F6A,
+				43E153D57DA155FC981305C3,
+			);
+			name = "Components";
+			sourceTree = "<group>";
+		};
+		8814E5CC305158D3BC37100E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33058EF92AC25907A9B86B5E,
+				9701F2EB7FCD550F82ED937A,
+				B4CB4D7B47105259A1CE508E,
+				E680D065546D5270996C4C11,
+				B59A6E7091125D20B050D44E,
+				B1A44B56F61A59F88C0ADE8D,
+				FA70DC4694D25EB3AD9D979E,
+				81DCF9973A365888B43EE4B3,
+			);
+			name = "Views";
+			sourceTree = "<group>";
+		};
+		BE148A63EB515B41AC56AA05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FEBF1F89DB335AC58695274F,
+				05B0754CDD885723BF4D6058,
+				75DF68E03B565679A58D5B73,
+				56856419770054E18541C3B4,
+				ED441A2FFF3F5FC69988CEEB,
+				BF2E2B3D46A758CFB2A218B2,
+			);
+			name = "Models";
+			sourceTree = "<group>";
+		};
+		65B676A920EF5BA2B2384D49 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				492F85F11410572CB6BE203A,
+				3AE96284764A5124BF612EDC,
+				308760D9248E532DBB05DEC3,
+			);
+			name = "Managers";
+			sourceTree = "<group>";
+		};
+		1083A8AF85A55E4BB81AA44E /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				9B002D83752455BEB88397C1,
+				CF2EA453E1AD5E168A5BC190,
+			);
+			name = "Game";
+			sourceTree = "<group>";
+		};
+		9E2AA07C8ECE52F492AA15BD /* Prismabrique */ = {
+			isa = PBXGroup;
+			children = (
+				A8549C7CAD775D84AC52B53E,
+				BE148A63EB515B41AC56AA05,
+				65B676A920EF5BA2B2384D49,
+				1083A8AF85A55E4BB81AA44E,
+				8814E5CC305158D3BC37100E,
+				D981555EADEB5DCB9AD5757F,
+				3712E8AE27BC509A8D096969,
+				34A8B864E8DE5196A93EDBF4,
+			);
+			name = "Prismabrique";
+			sourceTree = "<group>";
+		};
+		6B9067B5AF825814A7E16CC0 /* PrismabriqueTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED83DE14B9E35A75B517DF4C,
+				5678EB33235457BEBCF4FBEB,
+				F28FE20FD2AE554CA8C4AAE9,
+				9788EBC9B53E5023B39AFEC6,
+			);
+			name = "PrismabriqueTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C421DAEF6FC515184964945 /* Prismabrique */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F401809668C5C389BAB8F6B /* Build configuration list for PBXNativeTarget "Prismabrique" */;
+			buildPhases = (
+				DFD16D22A0AD5D82AD0364E8 /* Sources */,
+				B29E3208265550ABBF8EF02F /* Frameworks */,
+				CCBBD08B4C445D839E71A009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prismabrique;
+			productName = Prismabrique;
+			productReference = B00B17F4E9045F6C905AA783 /* Prismabrique.app */;
+			productType = "com.apple.product-type.application";
+		};
+		761EB96E9C6957119569AE0F /* PrismabriqueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC80D1641FA05F638E2BCC5D /* Build configuration list for PBXNativeTarget "PrismabriqueTests" */;
+			buildPhases = (
+				89703749A3B55B0BB47A2EEE /* Sources */,
+				D5BCAA725DA15FB28087A520 /* Frameworks */,
+				2FE2DA06DA995CE198273B68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A2E5BF481CF5A2F9A4B3284 /* PBXTargetDependency */,
+			);
+			name = PrismabriqueTests;
+			productName = PrismabriqueTests;
+			productReference = 6559DDDAA4B75BFB917B656E /* PrismabriqueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D628296EA6BD57128CD1B32B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					7C421DAEF6FC515184964945 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					761EB96E9C6957119569AE0F = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 7C421DAEF6FC515184964945;
+					};
+				};
+			};
+			buildConfigurationList = FE1EAE365C5C5B84ADDECDBE /* Build configuration list for PBXProject "Prismabrique" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06451ACE8B945502BE8318BD;
+			productRefGroup = 81119E0774F15BD8AC6203A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C421DAEF6FC515184964945 /* Prismabrique */,
+				761EB96E9C6957119569AE0F /* PrismabriqueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCBBD08B4C445D839E71A009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81ED6E38743359B1882296F6,
+				A76192EF4F7152B695D688B2,
+				802A2378E25F526598AFF161,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE2DA06DA995CE198273B68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFD16D22A0AD5D82AD0364E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE977D4747CD52A1AC80C92F,
+				3FA37942BF345BC7B29CD68D,
+				29E32EF144065ADC80428816,
+				6B48B349499F558F814802A2,
+				B76786DA781B5090A9E6C5D9,
+				709FD491FE2E5043BCDC5304,
+				659FD93A6FA356D1AE71D0D4,
+				11A34DF26A7453DBBF6AC2FD,
+				F58BF9FE63AF584089EC1F1D,
+				760C70E0B368518A849A1358,
+				B9C543A3509E520E95EBBD9C,
+				87195A717DFE5C40B1A4E271,
+				4B52845C3B2557878C133F4A,
+				D263888ECB7C53B9A06A97F8,
+				45803C1C592B5E2EAEBA83B3,
+				C712D207BE0A54528DD5C950,
+				899E7E43F7975B40BA930B06,
+				7EB836E8491D5E77838A693A,
+				828132AB919C5A938B780F99,
+				9B0F2A8690F6575C95250B57,
+				FD7EFDF723FA5230883DAC04,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89703749A3B55B0BB47A2EEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EAB889B2F785602B0EC381A,
+				3E3548DC6A335B0088D1CD6A,
+				BC371730A4D25141BDF4B847,
+				8615019312CA5BBFA5A48555,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A2E5BF481CF5A2F9A4B3284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C421DAEF6FC515184964945 /* Prismabrique */;
+			targetProxy = 06BD360594015E4C8DC73D31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0584FDF6DCC3504480C4FA34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		F616AE83AA675D04BD9AD29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A31831B4E699533F8167E778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Prismabrique;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Prismabrique can optionally use your approximate location, only after you opt in from Settings, to choose a cosmetic ambient color theme (for example, Northern or Southern hemisphere skies). This never affects gameplay, is never used while the app is in the background, and your exact location is never stored -- only a broad region name is saved on this device. You can disable this at any time in Settings.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prismabrique.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		19FD3D2A9DDB5C79B20528D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Prismabrique;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Prismabrique can optionally use your approximate location, only after you opt in from Settings, to choose a cosmetic ambient color theme (for example, Northern or Southern hemisphere skies). This never affects gameplay, is never used while the app is in the background, and your exact location is never stored -- only a broad region name is saved on this device. You can disable this at any time in Settings.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prismabrique.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C0EF7C3551DE5B17B34F9684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prismabrique.app.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prismabrique.app/Prismabrique";
+			};
+			name = Debug;
+		};
+		07241DEAF9365DBEA8971948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prismabrique.app.tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prismabrique.app/Prismabrique";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE1EAE365C5C5B84ADDECDBE /* Build configuration list for PBXProject "Prismabrique" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0584FDF6DCC3504480C4FA34 /* Debug */,
+				F616AE83AA675D04BD9AD29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F401809668C5C389BAB8F6B /* Build configuration list for PBXNativeTarget "Prismabrique" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31831B4E699533F8167E778 /* Debug */,
+				19FD3D2A9DDB5C79B20528D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC80D1641FA05F638E2BCC5D /* Build configuration list for PBXNativeTarget "PrismabriqueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0EF7C3551DE5B17B34F9684 /* Debug */,
+				07241DEAF9365DBEA8971948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D628296EA6BD57128CD1B32B /* Project object */;
+}

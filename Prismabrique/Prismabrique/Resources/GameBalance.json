@@ -1,0 +1,113 @@
+{
+  "_comment": "Single source of truth for every tunable gameplay value in Prismabrique. Nothing gameplay-related should be hardcoded in Swift source; add new knobs here instead.",
+  "schemaVersion": 1,
+  "levelCount": 50,
+  "board": {
+    "columns": 8,
+    "baseRows": 4,
+    "maxRows": 10,
+    "rowsIncreaseEveryLevels": 6,
+    "brickAspectRatio": 2.6,
+    "brickSpacing": 6.0,
+    "topInset": 90.0,
+    "sideInset": 14.0,
+    "ballCeilingInset": 18.0
+  },
+  "paddle": {
+    "baseWidthFraction": 0.24,
+    "minWidthFraction": 0.14,
+    "widthShrinkPerLevel": 0.0018,
+    "height": 22.0,
+    "baseSpeed": 620.0,
+    "cornerRadius": 11.0,
+    "bottomMargin": 31.5,
+    "maxWidthFraction": 0.6
+  },
+  "ball": {
+    "radius": 9.0,
+    "baseSpeed": 260.0,
+    "speedIncrementPerLevel": 6.5,
+    "inLevelSpeedGrowthPerBrick": 1.4,
+    "maxSpeed": 620.0,
+    "launchAngleDegrees": 62.0,
+    "maxBounceAngleDegrees": 68.0
+  },
+  "lives": {
+    "starting": 3,
+    "maxLives": 5,
+    "extraLifeScoreThreshold": 15000,
+    "extraLifeScoreInterval": 25000
+  },
+  "scoring": {
+    "baseScorePerBrick": 50,
+    "scorePerRowIndexBonus": 10,
+    "comboIncrementBonus": 5,
+    "comboResetSeconds": 1.6,
+    "levelClearBonus": 500,
+    "livesRemainingBonusEach": 250,
+    "powerUpCollectScore": 75
+  },
+  "brickHealth": {
+    "baseHitsRequired": 1,
+    "maxHitsRequired": 4,
+    "hitsIncreaseEveryLevels": 8,
+    "reinforcedRowChance": 0.12,
+    "reinforcedRowChanceIncrementPerLevel": 0.006
+  },
+  "powerUps": {
+    "baseDropChance": 0.10,
+    "dropChanceIncrementPerLevel": 0.0025,
+    "maxDropChance": 0.28,
+    "fallSpeed": 190.0,
+    "effectDurationSeconds": 9.0,
+    "widenPaddleBoost": 0.12,
+    "slowBallFactor": 1.6,
+    "multiBallSpreadDegrees": 18.0,
+    "types": ["widenPaddle", "slowBall", "multiBall", "extraLife", "magnetPaddle", "shield"]
+  },
+  "patterns": {
+    "sequence": [
+      "fullGrid", "checkerboard", "diamond", "pyramid", "fortress",
+      "hourglass", "spiral", "columns", "waves", "randomSparse"
+    ],
+    "densityRampPerLevel": 0.01,
+    "baseDensity": 0.72,
+    "maxDensity": 0.98
+  },
+  "colorPalette": {
+    "hueRotationPerLevel": 14.0,
+    "baseColors": ["#ff477e", "#ff9f45", "#ffd166", "#a06cd5", "#4d96ff", "#00d4ff"],
+    "paddleColor": "#00ff88",
+    "ballColor": "#00d4ff",
+    "backgroundTop": "#1a1a2e",
+    "backgroundBottom": "#16213e"
+  },
+  "difficultyCurve": {
+    "easyLevelCeiling": 10,
+    "mediumLevelCeiling": 30,
+    "speedCurveExponent": 1.05
+  },
+  "audio": {
+    "paddleHitFrequency": 220.0,
+    "brickHitFrequency": 440.0,
+    "wallHitFrequency": 180.0,
+    "powerUpFrequency": 660.0,
+    "levelCompleteFrequency": 880.0,
+    "gameOverFrequency": 110.0,
+    "defaultToneDuration": 0.09,
+    "defaultVolume": 0.22
+  },
+  "haptics": {
+    "brickHitStyle": "light",
+    "paddleHitStyle": "medium",
+    "powerUpStyle": "soft",
+    "levelCompleteStyle": "success",
+    "gameOverStyle": "error"
+  },
+  "location": {
+    "distanceFilterMeters": 50000.0,
+    "desiredAccuracy": "reduced",
+    "hemisphereLatitudeBandDegrees": 23.5,
+    "polarLatitudeThresholdDegrees": 60.0
+  }
+}
